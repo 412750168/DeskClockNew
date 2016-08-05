@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/menu
+END
+cities_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/menu/cities_menu.xml
+END
+settings_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/menu/settings_menu.xml
+END
+alarm_cab_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/menu/alarm_cab_menu.xml
+END
+desk_clock_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/menu/desk_clock_menu.xml
+END
+context_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/menu/context_menu.xml
+END
+set_alarm_context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/menu/set_alarm_context.xml
+END

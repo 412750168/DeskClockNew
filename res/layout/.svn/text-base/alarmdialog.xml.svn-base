@@ -1,0 +1,243 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="660dp"
+    android:background="@drawable/alarm_redact_background_02" >
+
+    <LinearLayout
+        android:layout_width="580dp"
+        android:layout_height="660dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/dialog_fontStyle_28_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="36dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/dialog_alarm_editor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button_dialog_editor_delete"
+                    style="@style/dialog_fontStyle_28_write"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="36dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/i_delete_alarm_background"
+                    android:gravity="center"
+                    android:text="@string/dialog_delete"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/framelayout_ampm_pv"
+                android:layout_width="100dp"
+                android:layout_height="240dp"
+                android:visibility="visible" >
+
+                <com.android.deskclock.PickerView
+                    android:id="@+id/ampm_pv"
+                    android:layout_width="100dp"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center_vertical|center_horizontal" />
+                
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/circle" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_hour_pv"
+                android:layout_width="100dp"
+                android:layout_height="240dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/framelayout_ampm_pv" >
+
+                <com.android.deskclock.PickerView
+                    android:id="@+id/hour_pv"
+                    android:layout_width="100dp"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center_vertical|center_horizontal" />
+                
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/circle" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/hour_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/framelayout_hour_pv"
+                android:text="@string/dialog_hour"
+                android:textColor="@color/qi_font_6666"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/framelayout_minute_pv"
+                android:layout_width="100dp"
+                android:layout_height="240dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/hour_tv" >
+
+              
+                <com.android.deskclock.PickerView
+                    android:id="@+id/minute_pv"
+                    android:layout_width="100dp"
+                    android:layout_height="240dp" />
+                
+                 <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/circle" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/minute_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/framelayout_minute_pv"
+                android:gravity="center"
+                android:text="@string/dialog_minute"
+                android:textColor="@color/qi_font_6666"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line1" />
+
+        <Button
+            android:id="@+id/button_repeat"
+            style="@style/dialog_fontStyle_36_write"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/arrows"
+            android:gravity="left|center_vertical"
+            android:text="@string/dialog_repeat" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line1" />
+
+        <Button
+            android:id="@+id/button_sound"
+            style="@style/dialog_fontStyle_36_write"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/arrows"
+            android:gravity="left|center_vertical"
+            android:text="@string/dialog_ring" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line1" />
+
+        <Button
+            android:id="@+id/button_label"
+            style="@style/dialog_fontStyle_36_write"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/arrows"
+            android:gravity="left|center_vertical"
+            android:text="@string/dialog_label" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/split_line"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_dialog_editor_mend"
+                style="@style/dialog_fontStyle_36_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/dialog_mend"
+                android:visibility="gone" />
+
+             <Button
+                android:id="@+id/button_dialog_editor_finish"
+                style="@style/dialog_fontStyle_36_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/dialog_finish" />
+            
+            <Button
+                android:id="@+id/button_dialog_editor_cancel"
+                style="@style/dialog_fontStyle_36_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/dialog_cancel" />
+
+           
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

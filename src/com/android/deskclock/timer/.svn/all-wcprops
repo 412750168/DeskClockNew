@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/timer
+END
+CountingTimerView.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/timer/CountingTimerView.java
+END
+Timers.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/timer/Timers.java
+END
+TimerFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/timer/TimerFragment.java
+END
+TimerReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/timer/TimerReceiver.java
+END
+TimerAlertFullScreen.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/timer/TimerAlertFullScreen.java
+END
+TimerListItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/timer/TimerListItem.java
+END
+TimerObj.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/timer/TimerObj.java
+END
+TimerView.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/timer/TimerView.java
+END

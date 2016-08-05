@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable
+END
+red_checkbox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/red_checkbox.xml
+END
+i_setting_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/i_setting_button.xml
+END
+alarm_tab.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/alarm_tab.xml
+END
+i_delete_alarm_background.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/i_delete_alarm_background.xml
+END
+activated_background_holo_dark.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/activated_background_holo_dark.xml
+END
+btn_alarm_alert.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/btn_alarm_alert.xml
+END
+ic_backspace.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/ic_backspace.xml
+END
+main_button_normal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/main_button_normal.xml
+END
+btn_strip_trans_middle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/btn_strip_trans_middle.xml
+END
+ic_alarm_alert_dismiss.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/ic_alarm_alert_dismiss.xml
+END
+ic_label.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/ic_label.xml
+END
+dialog_toggle_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/dialog_toggle_button.xml
+END
+ic_alarm_alert_snooze.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/ic_alarm_alert_snooze.xml
+END
+ic_alarm_alert_outerring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/ic_alarm_alert_outerring.xml
+END
+item_background.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/item_background.xml
+END
+dialog_checkbox_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/dialog_checkbox_button.xml
+END
+clock_analog_minute_mipmap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/clock_analog_minute_mipmap.xml
+END
+header_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/header_bg.xml
+END
+stopwatch_tab.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/stopwatch_tab.xml
+END
+add_alarm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/add_alarm.xml
+END
+timer_tab.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/timer_tab.xml
+END
+btn_strip_trans_right.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/btn_strip_trans_right.xml
+END
+clock_analog_dial_mipmap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/clock_analog_dial_mipmap.xml
+END
+main_button_red.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/main_button_red.xml
+END
+i__dialog_cancel_background.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/i__dialog_cancel_background.xml
+END
+clock_analog_second_mipmap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/clock_analog_second_mipmap.xml
+END
+i_exit_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/i_exit_button.xml
+END
+ic_delete.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/ic_delete.xml
+END
+ic_share.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/ic_share.xml
+END
+seekber_background.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/seekber_background.xml
+END
+clock_tab.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/clock_tab.xml
+END
+listview_switch_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/listview_switch_button.xml
+END
+header_bg_bar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/header_bg_bar.xml
+END
+btn_strip_trans_left.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/btn_strip_trans_left.xml
+END
+toggle_underline.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/toggle_underline.xml
+END
+i__dialog_sureordelete_background.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/i__dialog_sureordelete_background.xml
+END
+ic_lap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/ic_lap.xml
+END
+indicator_bar_onoff.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/indicator_bar_onoff.xml
+END
+i_stop_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/i_stop_button.xml
+END
+clock_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/clock_selector.xml
+END
+ic_reset.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/ic_reset.xml
+END
+notification_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/notification_bg.xml
+END
+ic_plusone.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/ic_plusone.xml
+END
+alarm_background_normal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/alarm_background_normal.xml
+END
+incall_round_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/incall_round_button.xml
+END
+red_fastscroll_thumb.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/red_fastscroll_thumb.xml
+END
+i_fullscreen_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/i_fullscreen_button.xml
+END
+footer_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/footer_bg.xml
+END
+dialog_radio_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/dialog_radio_button.xml
+END
+i__dialog_mend_background.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/i__dialog_mend_background.xml
+END
+ic_alarm_alert_touch_handle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/ic_alarm_alert_touch_handle.xml
+END
+i_add_alarm_background.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/i_add_alarm_background.xml
+END
+clock_analog_hour_mipmap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/clock_analog_hour_mipmap.xml
+END
+indicator_clock_onoff.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/drawable/indicator_clock_onoff.xml
+END

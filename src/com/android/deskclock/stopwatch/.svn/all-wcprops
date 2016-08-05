@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/stopwatch
+END
+StopwatchFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/stopwatch/StopwatchFragment.java
+END
+Stopwatches.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/stopwatch/Stopwatches.java
+END
+StopwatchService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/stopwatch/StopwatchService.java
+END

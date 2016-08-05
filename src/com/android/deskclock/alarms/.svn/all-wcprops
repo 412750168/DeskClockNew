@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/alarms
+END
+MyAnalogClock.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/alarms/MyAnalogClock.java
+END
+AlarmNotifications.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/alarms/AlarmNotifications.java
+END
+AlarmStateManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/alarms/AlarmStateManager.java
+END
+AlarmActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/alarms/AlarmActivity.java
+END
+AlarmKlaxon.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/alarms/AlarmKlaxon.java
+END
+AlarmService.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/alarms/AlarmService.java
+END

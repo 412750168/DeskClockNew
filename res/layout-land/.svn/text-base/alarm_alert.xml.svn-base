@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/i_main_background"
+    android:baselineAligned="false" >
+
+    <com.android.deskclock.widget.multiwaveview.GlowPadView
+        android:id="@+id/glow_pad_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/glowpadview_margin_right"
+        android:layout_marginRight="@dimen/glowpadview_margin_right"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone"
+        dc:directionDescriptions="@array/snooze_dismiss_direction_descriptions"
+        dc:feedbackCount="1"
+        dc:glowRadius="@dimen/glowpadview_glow_radius"
+        dc:handleDrawable="@drawable/ic_alarm_alert_touch_handle"
+        dc:innerRadius="@dimen/glowpadview_inner_radius"
+        dc:outerRadius="@dimen/glowpadview_target_placement_radius"
+        dc:outerRingDrawable="@drawable/ic_alarm_alert_outerring"
+        dc:pointDrawable="@drawable/ic_lockscreen_glowdot"
+        dc:snapMargin="@dimen/glowpadview_snap_margin"
+        dc:targetDescriptions="@array/snooze_dismiss_descriptions"
+        dc:targetDrawables="@array/snooze_dismiss_drawables"
+        dc:vibrationDuration="20" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="95dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_alarm_new_lazy"
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:background="@drawable/lazy_backgroud"
+            android:text="@string/dialog_alarm_lazy"
+            android:textColor="@color/qi_orange"
+            android:textSize="40dp"
+            android:visibility="gone" />
+
+        <com.android.deskclock.ScrollLayout
+            android:id="@+id/scrolllayout_stop_alarm"
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp" >
+
+            <include layout="@layout/first_layout" />
+
+            <include layout="@layout/second_layout" />
+            >
+        </com.android.deskclock.ScrollLayout>
+
+        <Button
+            android:id="@+id/button_alarm_new_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/i_stop_button"
+            android:text="@string/dialog_alarm_stop"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <AbsoluteLayout
+        android:id="@+id/AbsoluteLayout_alarm_background"
+        android:layout_width="500dp"
+        android:layout_height="520dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="92dp"
+        android:background="@drawable/alarm_in" >
+
+        <com.android.deskclock.alarms.MyAnalogClock
+            android:id="@+id/analog_appwidget"
+            style="@style/AppWidget2"
+            android:layout_width="450dp"
+            android:layout_height="450dp"
+            android:layout_x="27dp"
+            android:layout_y="55dp" />
+
+        <LinearLayout
+            android:id="@+id/alarm_clock_left"
+            android:layout_width="500dp"
+            android:layout_height="310dp"
+            android:layout_x="5dp"
+            android:layout_y="133dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/alertTitle"
+                style="@style/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingBottom="@dimen/label_margin_small"
+                android:paddingLeft="@dimen/label_margin_big"
+                android:paddingStart="@dimen/label_margin_big"
+                android:singleLine="true"
+                android:textColor="@color/clock_black"
+                android:visibility="gone" />
+
+            <TextClock
+                android:id="@+id/digitalClock"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:baselineAligned="true"
+                android:ellipsize="none"
+                android:format12Hour="@string/main_clock_12_hours_format"
+                android:format24Hour="@string/clock_24_hours_format"
+                android:gravity="top"
+                android:paddingBottom="24dp"
+                android:singleLine="true"
+                android:textColor="@color/qi_green"
+                android:textSize="@dimen/digital_screensaver_clock_text_size" />
+
+            <com.android.deskclock.PictureClock
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/textview_alarm_new_date"
+                style="@style/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="@color/clock_white"
+                android:textSize="@dimen/bottom_text_size" />
+        </LinearLayout>
+    </AbsoluteLayout>
+
+    <TextView
+        style="@style/fontStyle_40_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AbsoluteLayout_alarm_background"
+        android:layout_alignLeft="@+id/AbsoluteLayout_alarm_background"
+        android:gravity="center"
+        android:text="@string/alarm_list_title" />
+
+</RelativeLayout>

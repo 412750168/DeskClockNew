@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/anim
+END
+undim.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/anim/undim.html
+END
+unhide.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/anim/unhide.html
+END
+fade_in.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/anim/fade_in.xml
+END
+fade_out.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/anim/fade_out.xml
+END
+dim.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/anim/dim.xml
+END
+dim_instant.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/anim/dim_instant.xml
+END
+hide.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/anim/hide.xml
+END
+undim_instant.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/anim/undim_instant.xml
+END
+unhide_instant.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/anim/unhide_instant.xml
+END

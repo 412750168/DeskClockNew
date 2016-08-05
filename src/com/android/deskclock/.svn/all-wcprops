@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock
+END
+SnoozeLengthDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/SnoozeLengthDialog.java
+END
+LabelDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/LabelDialog.java
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/Utils.java
+END
+RepeatDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/RepeatDialog.java
+END
+DeskClock.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/DeskClock.java
+END
+AlarmAlertWakeLock.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AlarmAlertWakeLock.java
+END
+ToastMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/ToastMaster.java
+END
+TextClockSame.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/TextClockSame.java
+END
+GetFont.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/GetFont.java
+END
+PickerView.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/PickerView.java
+END
+AnalogClock.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AnalogClock.java
+END
+ScreensaverSettingsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/ScreensaverSettingsActivity.java
+END
+ClockFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/ClockFragment.java
+END
+TimerRingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/TimerRingService.java
+END
+Log.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/Log.java
+END
+Back_DeskClock.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/Back_DeskClock.java
+END
+DontPressWithParentLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/DontPressWithParentLayout.java
+END
+AlarmDialogNew.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AlarmDialogNew.java
+END
+PictureClock.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/PictureClock.java
+END
+TextClockDiff.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/TextClockDiff.java
+END
+TimerSetupView.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/TimerSetupView.java
+END
+AndroidClockTextView.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AndroidClockTextView.java
+END
+PictureClockSame.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/PictureClockSame.java
+END
+AlarmDialogDelete.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AlarmDialogDelete.java
+END
+HandleApiCalls.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/HandleApiCalls.java
+END
+AlarmInitReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AlarmInitReceiver.java
+END
+SeekBar_vertical.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/SeekBar_vertical.java
+END
+SoundDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/SoundDialog.java
+END
+AsyncHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AsyncHandler.java
+END
+AlarmDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AlarmDialog.java
+END
+AlarmUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AlarmUtils.java
+END
+SettingsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/SettingsActivity.java
+END
+AlarmTimelineView.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AlarmTimelineView.java
+END
+CircleButtonsLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/CircleButtonsLayout.java
+END
+Screensaver.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/Screensaver.java
+END
+LabelDialogFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/LabelDialogFragment.java
+END
+AlarmListeners.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AlarmListeners.java
+END
+DeskClockFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/DeskClockFragment.java
+END
+ScrollLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/ScrollLayout.java
+END
+AlarmClockFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/AlarmClockFragment.java
+END
+CircleTimerView.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/CircleTimerView.java
+END
+ScreensaverActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/ScreensaverActivity.java
+END
+MySharedPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/MySharedPreferences.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/layout-land
+END
+alarm_alert.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/layout-land/alarm_alert.xml
+END
+time_setup_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/layout-land/time_setup_view.xml
+END
+world_clock_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/layout-land/world_clock_list_item.xml
+END
+clock_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/layout-land/clock_fragment.xml
+END
+stopwatch_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/res/layout-land/stopwatch_fragment.xml
+END

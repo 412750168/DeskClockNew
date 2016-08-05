@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/alarmclock
+END
+AnalogAppWidgetProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/alarmclock/AnalogAppWidgetProvider.java
+END
+DigitalAppWidgetService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/alarmclock/DigitalAppWidgetService.java
+END
+WidgetUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/alarmclock/WidgetUtils.java
+END
+DigitalWidgetViewsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/alarmclock/DigitalWidgetViewsFactory.java
+END
+DigitalAppWidgetProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/alarmclock/DigitalAppWidgetProvider.java
+END

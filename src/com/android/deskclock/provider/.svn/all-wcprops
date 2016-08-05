@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/provider
+END
+ClockDatabaseHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/provider/ClockDatabaseHelper.java
+END
+AlarmInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/provider/AlarmInstance.java
+END
+DaysOfWeek.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/provider/DaysOfWeek.java
+END
+ClockProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/provider/ClockProvider.java
+END
+City.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/provider/City.java
+END
+ClockContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/provider/ClockContract.java
+END
+Alarm.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/provider/Alarm.java
+END

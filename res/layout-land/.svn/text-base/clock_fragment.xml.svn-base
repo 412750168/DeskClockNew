@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<!--
+     Use this clock_fragment for landscape, which has main clock frame next to cities,
+     with a spacing ratio dependent on the number of clocks per row (phone has 1, tablet has 2).
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="750dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="130dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|center_vertical"
+            android:weightSum="@integer/clocks_per_row" >
+
+            <include
+                android:id="@+id/main_clock_left_pane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="2"
+                layout="@layout/main_clock_frame" />
+
+            <ListView
+                android:id="@+id/cities"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_weight="@integer/world_clocks_per_row"
+                android:clickable="false" />
+        </LinearLayout>
+    </LinearLayout>
+<!--  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="80dp"
+        android:orientation="horizontal"
+        android:paddingTop="30dp" >
+
+        <Button
+            android:id="@+id/button_exit_new"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/i_exit_button"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="@string/button_exit_new" />
+
+        <Button
+            android:id="@+id/button_fullScreen_new"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/i_fullscreen_button"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="@string/button_fullScreen_new" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_setting_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/i_setting" />
+-->
+
+	 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:paddingTop="30dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/clock_title"
+            style="@style/fontStyle_40_orange" />
+    </LinearLayout>
+    
+	 
+    <ImageButton
+        android:id="@+id/cities_button"
+        style="@style/button"
+        android:layout_width="@dimen/footer_button_size"
+        android:layout_height="@dimen/footer_button_size"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/footer_button_layout_margin"
+        android:layout_marginEnd="@dimen/footer_button_layout_margin"
+        android:layout_marginLeft="@dimen/footer_button_layout_margin"
+        android:layout_marginRight="@dimen/footer_button_layout_margin"
+        android:layout_marginStart="@dimen/footer_button_layout_margin"
+        android:layout_marginTop="@dimen/footer_button_layout_margin"
+        android:background="@drawable/main_button_normal"
+        android:contentDescription="@string/button_cities"
+        android:onClick="clockButtonsOnClick"
+        android:src="@drawable/ic_globe"
+        android:visibility="gone" />
+
+</FrameLayout>

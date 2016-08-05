@@ -1,0 +1,274 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="600dp"
+    android:layout_height="320dp"
+    android:background="@drawable/i_dialog_background"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_dialog_hour_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/i_arrow_up"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/button_dialog_ampm"
+                style="@style/dialog_fontStyle_20"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/dialog_am" />
+
+            <Button
+                android:id="@+id/button_dialog_minute_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/i_arrow_up"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="550dp"
+            android:layout_height="10dp"
+            android:background="@drawable/i_dialog_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edittext_dialog_hour"
+                style="@style/dialog_fontStyle_50"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="0.45"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:numeric="integer" />
+
+            <EditText
+                style="@style/dialog_fontStyle_50"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="0.1"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:gravity="center"
+                android:text="@string/dialog_seperator" />
+
+            <EditText
+                android:id="@+id/edittext_dialog_minute"
+                style="@style/dialog_fontStyle_50"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="0.45"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="550dp"
+            android:layout_height="10dp"
+            android:background="@drawable/i_dialog_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_dialog_hour_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/i_arrow_down"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/button_dialog_minute_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/i_arrow_down"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/togglebutton_dialog_sun"
+            style="@style/dialog_fontStyle_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_toggle_button"
+            android:textOff="@string/dialog_sun"
+            android:textOn="@string/dialog_sun" />
+
+        <ToggleButton
+            android:id="@+id/togglebutton_dialog_mon"
+            style="@style/dialog_fontStyle_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_toggle_button"
+            android:textOff="@string/dialog_mon"
+            android:textOn="@string/dialog_mon" />
+
+        <ToggleButton
+            android:id="@+id/togglebutton_dialog_tue"
+            style="@style/dialog_fontStyle_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_toggle_button"
+            android:textOff="@string/dialog_tue"
+            android:textOn="@string/dialog_tue" />
+
+        <ToggleButton
+            android:id="@+id/togglebutton_dialog_wed"
+            style="@style/dialog_fontStyle_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_toggle_button"
+            android:textOff="@string/dialog_wed"
+            android:textOn="@string/dialog_wed" />
+
+        <ToggleButton
+            android:id="@+id/togglebutton_dialog_thr"
+            style="@style/dialog_fontStyle_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_toggle_button"
+            android:textOff="@string/dialog_thr"
+            android:textOn="@string/dialog_thr" />
+
+        <ToggleButton
+            android:id="@+id/togglebutton_dialog_fri"
+            style="@style/dialog_fontStyle_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_toggle_button"
+            android:textOff="@string/dialog_fri"
+            android:textOn="@string/dialog_fri" />
+
+        <ToggleButton
+            android:id="@+id/togglebutton_dialog_sat"
+            style="@style/dialog_fontStyle_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_toggle_button"
+            android:textOff="@string/dialog_sat"
+            android:textOn="@string/dialog_sat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text_dialog_after_time_alarm"
+            style="@style/dialog_fontStyle_20"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/dialog_setting_after_alarm"
+            android:textColor="@android:color/black" />
+
+        <CheckBox
+            android:id="@+id/checkbox_dialog_every_week"
+            style="@style/dialog_fontStyle_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="@string/dialog_every_week"
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_dialog_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/i__dialog_sureordelete_background"
+            android:text="@string/dialog_sure" />
+
+        <Button
+            android:id="@+id/button_dialog_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/i__dialog_sureordelete_background"
+            android:text="@string/dialog_delete"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_dialog_mend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/i__dialog_mend_background"
+            android:text="@string/dialog_mend"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/i__dialog_cancel_background"
+            android:text="@string/dialog_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/widget/sgv
+END
+SgvAnimationHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/widget/sgv/SgvAnimationHelper.java
+END
+OverScrollerSGV.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/widget/sgv/OverScrollerSGV.java
+END
+ReorderHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/widget/sgv/ReorderHelper.java
+END
+ReorderUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/widget/sgv/ReorderUtils.java
+END
+GridAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/widget/sgv/GridAdapter.java
+END
+StaggeredGridView.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/src/midapp/!svn/ver/3698/misc/DeskClockNew/src/com/android/deskclock/widget/sgv/StaggeredGridView.java
+END

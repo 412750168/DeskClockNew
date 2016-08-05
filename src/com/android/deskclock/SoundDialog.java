@@ -1,0 +1,426 @@
+package com.android.deskclock;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+import com.android.deskclock.RepeatDialog.SingleView;
+import com.android.deskclock.RepeatDialog.onSetRepeatListen;
+
+import android.R.raw;
+import android.app.Dialog;
+import android.content.BroadcastReceiver;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.database.Cursor;
+import android.graphics.Color;
+import android.media.MediaPlayer;
+import android.media.RingtoneManager;
+import android.net.Uri;
+import android.provider.MediaStore;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.Checkable;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.RadioButton;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
+
+public class SoundDialog {
+
+	private static final String STOP_TEST_ALARM_SOUND = "zzl.bestidear.stop.alarm.sound";
+	
+	private Context mcontext;
+	private Dialog mdialog;
+	private ListView mlistView;
+	private SingleAdapter singleAdapter;
+	HashMap<String,Uri> hashMap;
+	MediaPlayer mMediaPlayer;
+	
+	private Button button_sound_rong ;
+	private Button button_sound_sound;
+	private Button button_cancel;
+	private Button button_finish;
+	
+	
+	private onSetRingListen setRingListen;
+	private Uri muri;
+	
+	StopAlarmReceiver alarmReceiver;
+
+	public SoundDialog(Context context,Uri uri) {
+		super();
+		mcontext = context;
+		muri = uri;
+		mdialog = new Dialog(mcontext, R.style.Dialog_notitle);
+
+		mdialog.setContentView(R.layout.sound_uri);
+		mdialog.setCanceledOnTouchOutside(false);// 设置点击屏幕Dialog不消�?
+		
+		mlistView = (ListView) mdialog.findViewById(R.id.listview_sound_uri);
+		button_sound_rong = (Button)mdialog.findViewById(R.id.button_sound_rong);
+		button_sound_sound = (Button)mdialog.findViewById(R.id.button_sound_sound);
+		
+		hashMap = getRingtoneTitleList();
+		/*if(hashMap.containsValue((Uri)muri)){
+			button_sound_rong.setBackgroundResource(R.drawable.ring_checked);
+			button_sound_sound.setBackgroundResource(R.drawable.sound_unchecked);
+				
+		}else {
+			hashMap = getMusicTitleList();
+			button_sound_rong.setBackgroundResource(R.drawable.ring_unchecked);
+			button_sound_sound.setBackgroundResource(R.drawable.sound_checked);
+		}
+		*/
+		Set<String> keyset = hashMap.keySet();
+		singleAdapter = new SingleAdapter(keyset);
+		mlistView.setAdapter(singleAdapter);
+		
+		button_sound_rong.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				hashMap = getRingtoneTitleList();
+				Set<String> keyset = hashMap.keySet();
+				singleAdapter.setData(keyset);
+				singleAdapter.notifyDataSetChanged();
+				
+				button_sound_rong.setBackgroundResource(R.drawable.ring_checked);
+				button_sound_sound.setBackgroundResource(R.drawable.sound_unchecked);
+			}
+		});
+		
+		button_sound_sound.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				hashMap = getMusicTitleList();
+				Set<String> keyset = hashMap.keySet();
+				singleAdapter.setData(keyset);
+				singleAdapter.notifyDataSetChanged();
+				
+				button_sound_rong.setBackgroundResource(R.drawable.ring_unchecked);
+				button_sound_sound.setBackgroundResource(R.drawable.sound_checked);
+			}
+		});
+		
+		button_cancel = (Button)mdialog.findViewById(R.id.button_sound_cancel);
+		button_cancel.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				if(mMediaPlayer!= null && mMediaPlayer.isPlaying())
+					mMediaPlayer.stop();
+				mdialog.dismiss();
+				
+				mcontext.unregisterReceiver(alarmReceiver);
+			}
+		});
+		button_finish = (Button)mdialog.findViewById(R.id.button_sound_finish);
+		button_finish.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				setRingListen.setRing(muri);
+				if(mMediaPlayer!= null && mMediaPlayer.isPlaying())
+					mMediaPlayer.stop();
+				mdialog.dismiss();
+				
+				mcontext.unregisterReceiver(alarmReceiver);
+
+			}
+		});
+		
+	}
+
+	public void dialogShow() {
+		if (mdialog != null)
+			mdialog.show();
+		
+		IntentFilter intentFilter = new IntentFilter();
+		intentFilter.addAction(STOP_TEST_ALARM_SOUND);
+		
+		alarmReceiver = new StopAlarmReceiver();
+		mcontext.registerReceiver(alarmReceiver, intentFilter);
+	}
+	
+	private class StopAlarmReceiver extends BroadcastReceiver{
+
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			// TODO Auto-generated method stub
+			if(intent.getAction().equals(STOP_TEST_ALARM_SOUND)){
+				
+				if(mMediaPlayer != null && mMediaPlayer.isPlaying())
+					mMediaPlayer.stop();
+			}
+		}		
+	}
+	
+	public HashMap<String,Uri> getRingtoneTitleList(){ 
+	    HashMap<String,Uri> hashMap = new HashMap<String, Uri>();
+	    RingtoneManager manager = new RingtoneManager(mcontext); 
+	    manager.setType(RingtoneManager.TYPE_ALARM); 
+	    Cursor cursor = manager.getCursor(); 
+	    if(cursor.moveToFirst()){ 
+	        do{ 
+	            String title = cursor.getString(RingtoneManager.TITLE_COLUMN_INDEX); 
+	            String str_uri  = cursor.getString(RingtoneManager.URI_COLUMN_INDEX);
+	            Uri baseuri = Uri.parse(str_uri);
+	            int id = cursor.getInt(RingtoneManager.ID_COLUMN_INDEX);
+	            Uri uri = Uri.withAppendedPath(baseuri, ""+id);
+	           
+	            hashMap.put(title, uri);
+	        }while(cursor.moveToNext()); 
+	    } 
+	    return hashMap; 
+	}  
+	
+	public HashMap<String,Uri> getMusicTitleList(){ 
+	    HashMap<String,Uri> hashMap = new HashMap<String, Uri>();
+	    ContentResolver musicResolver = mcontext.getContentResolver();
+	    Cursor musicCursor = musicResolver.query(
+	    MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, null, null, null,
+	    null);
+	    if(musicCursor.moveToFirst()){ 
+	        do{ 
+	            String title = musicCursor.getString(musicCursor.getColumnIndex(MediaStore.Audio.Media.DISPLAY_NAME)); 
+	            
+	            Uri baseuri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+	            int id = musicCursor.getInt(musicCursor.getColumnIndex(MediaStore.Audio.Media._ID));
+	            
+	            Uri uri = Uri.withAppendedPath(baseuri, ""+id);
+	            Log.d("zzl:::",uri.toString());
+	            hashMap.put(title, uri);
+	        }while(musicCursor.moveToNext()); 
+	    } 
+	    return hashMap; 
+	}  
+
+	public class SingleView extends LinearLayout implements Checkable {
+
+		private TextView mText;
+		private RadioButton mRadioButton;
+
+		public SingleView(Context context, AttributeSet attrs) {
+			super(context, attrs);
+			initView(context);
+		}
+
+		public SingleView(Context context) {
+			super(context);
+			initView(context);
+		}
+
+		private void initView(Context context) {
+			// 填充布局
+			LayoutInflater inflater = LayoutInflater.from(context);
+			View v = inflater.inflate(R.layout.item_radiobutton_layout, this,
+					true);
+			mText = (TextView) v.findViewById(R.id.textview_radio_title);
+			mRadioButton = (RadioButton) v.findViewById(R.id.radiobutton);
+		}
+
+		@Override
+		public void setChecked(boolean checked) {
+			mRadioButton.setChecked(checked);
+
+		}
+
+		@Override
+		public boolean isChecked() {
+			return mRadioButton.isChecked();
+		}
+
+		@Override
+		public void toggle() {
+			mRadioButton.toggle();
+		}
+
+		public void setTitle(String text) {
+			mText.setText(text);
+		}
+	}
+
+	private class SingleAdapter extends BaseAdapter {
+		
+		Set<String> set = new HashSet<String>();
+		Object[] title ;
+		HashMap<String, Boolean> states = new HashMap<String, Boolean>();
+		
+		
+		public SingleAdapter(Set<String> set2) {
+			super();
+			this.set = set2;
+			title = set.toArray();
+			for(int i= 0;i<title.length;i++)
+				if(hashMap.get((String)title[i]).toString().equals(muri.toString())){
+					Object tmp = title[0];
+					title[0] = title[i];
+					title[i] = tmp;
+					tmp = null;
+					break;
+				}
+				
+			for (String key : states.keySet()) {
+				states.put(key, false);
+
+			}
+		}
+		
+		public void setData(Set<String> set3){
+			this.set = set3;
+			title = set.toArray();
+			
+			for(int i= 0;i<title.length;i++)
+				if(hashMap.get((String)title[i]).toString().equals(muri.toString())){
+					Object tmp = title[0];
+					title[0] = title[i];
+					title[i] = tmp;
+					tmp = null;
+					break;
+				}
+			
+			for (String key : states.keySet()) {
+				states.put(key, false);
+
+			}
+
+		}
+
+		@Override
+		public int getCount() {
+			return set.size();
+		}
+
+		@Override
+		public Object getItem(int position) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public long getItemId(int position) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public View getView(final int arg0, View arg1, ViewGroup arg2) {
+			// TODO Auto-generated method stub
+			final SingleView singleView = new SingleView(mcontext);
+			singleView.setTitle((String)title[arg0]);
+			
+			if(hashMap.get((String)title[arg0]).toString().equals(muri.toString()))
+				states.put(String.valueOf(arg0),true);
+
+			singleView.mRadioButton
+					.setOnClickListener(new View.OnClickListener() {
+
+						public void onClick(View v) {
+
+							if(mMediaPlayer != null && mMediaPlayer.isPlaying())
+								mMediaPlayer.stop();
+							mMediaPlayer= MediaPlayer.create(mcontext, hashMap.get((String)title[arg0]));  
+					        mMediaPlayer.setLooping(true);//设置循环  
+					        try {
+								mMediaPlayer.prepare();
+							} catch (IllegalStateException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							} catch (IOException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}  
+					        mMediaPlayer.start();  
+							
+							// 重置，确保最多只有一项被选中
+							for (String key : states.keySet()) {
+								states.put(key, false);
+
+							}
+
+							states.put(String.valueOf(arg0),
+									singleView.mRadioButton.isChecked());
+							
+							muri = hashMap.get((String)title[arg0]);
+							SingleAdapter.this.notifyDataSetChanged();
+						}
+					});
+			
+			singleView.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					if(mMediaPlayer != null && mMediaPlayer.isPlaying())
+						mMediaPlayer.stop();
+					mMediaPlayer= MediaPlayer.create(mcontext, hashMap.get((String)title[arg0]));  
+			        mMediaPlayer.setLooping(true);//设置循环  
+			        try {
+						mMediaPlayer.prepare();
+					} catch (IllegalStateException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}  
+			        mMediaPlayer.start();  
+					
+					// 重置，确保最多只有一项被选中
+					for (String key : states.keySet()) {
+						states.put(key, false);
+
+					}
+
+					states.put(String.valueOf(arg0),
+							singleView.mRadioButton.isChecked());
+					
+					muri = hashMap.get((String)title[arg0]);
+					SingleAdapter.this.notifyDataSetChanged();
+				}
+			});
+
+			boolean res = false;
+			if (states.get(String.valueOf(arg0)) == null
+					|| states.get(String.valueOf(arg0)) == false) {
+				res = false;
+				states.put(String.valueOf(arg0), false);
+			} else
+				res = true;
+
+			singleView.mRadioButton.setChecked(res);
+			if(res)
+				singleView.mText.setTextColor(Color.GREEN);
+			else singleView.mText.setTextColor(Color.WHITE);
+
+			return singleView;
+		}
+
+	}
+	
+	public interface onSetRingListen{
+		 public void setRing(Uri uri);
+	 }
+
+	 public void setRingListen(onSetRingListen setRingListen){
+		 this.setRingListen = setRingListen;
+	 }
+
+}
